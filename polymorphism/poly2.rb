@@ -20,3 +20,25 @@
   # 4
   # I am car, I have 4
   #  wheels
+class Vehicle
+  def show
+    puts "enter the no of vehicles"
+    @a=gets.to_i
+  end
+end
+class Bike < Vehicle
+  def bk
+show
+puts "I am Bike,i have 2 Wheels"
+end
+end
+class Car < Vehicle
+  def ck
+    show
+  puts "I am Car,I have 4 Wheels"
+end
+end
+b=Bike.new
+b.bk
+c=Car.new
+c.ck
